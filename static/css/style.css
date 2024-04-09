@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    list-style: none;
+    text-decoration: none;
+}
+
+.headerdosite {
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.C-praia {
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 16px; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pacotes {
+    background-image: linear-gradient(cyan, white);
+}
+
+.card {
+    height: 60%;
+    margin-top: 7rem;
+}
+
+.sobre {
+    background-image: linear-gradient(white, blue);
+}
+
+.sobrenos {
+    background: rgba(0, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 70%;
+    margin-top: 7rem;
+    text-align: center;
+    padding: 5%;
+}
+
+.sobrenos .h1 {
+    font-size: 500%;
+    padding-bottom: 1rem;
+}
+
+.sobrenos .container .h3 {
+    width: 30%;
+    text-align: center;
+}
+
+.formpagamento{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    height: 35%;
+}

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+<div id="inicio" class="bg-image"
+    style="background-image: url('/static/img/praia-palmeiras-wallpaper.jpg'); height: 100vh;">
+    <nav class="headerdosite navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <div class="container d-flex justify-content-between">
+                    <div class="container">
+                        <li class="navbar-brand">Praia.inc</li>
+                    </div>
+                    <div class="container d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pagamento">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobrenos">Sobre</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid border p-5 C-praia">
+        <p class="h1 mt-5 pt-5">Praia.inc</p>
+        <p class="h3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut architecto harum ducimus assumenda
+            esse nobis! Odio distinctio vel placeat delectus autem, expedita architecto consequuntur, veritatis ex, quod
+            error maiores dicta!</p>
+        <button class="btn btn-primary">
+            <a href="#pagamento" style="text-decoration: none; color: inherit;">Ver pacotes!</a>
+        </button>
+    </div>
+</div> <!-- inicio -->
+<div id="pagamento" class="container-fluid d-flex p-5 pacotes justify-content-around" style="height: 100vh;">
+    <div class="card" style="width: 25rem;">
+        <img src="{{url_for('static', filename='img/aviao.jpg')}}" class="card-img-top" alt="aviao">
+        <div class="card-body">
+            <h5 class="card-title">Pacote 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque repudiandae pariatur
+                laudantium. Quis iure blanditiis architecto aut suscipit excepturi amet provident veniam ratione minima,
+                tenetur, neque reiciendis deleniti officiis.</p>
+            <a href="{{url_for('pagamento')}}" class="btn btn-primary">Ir para o pagamento</a>
+        </div>
+    </div>
+    <div class="card" style="width: 25rem;">
+        <img src="{{url_for('static', filename='img/aviao.jpg')}}" class="card-img-top" alt="aviao">
+        <div class="card-body">
+            <h5 class="card-title">Pacote 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque repudiandae pariatur
+                laudantium. Quis iure blanditiis architecto aut suscipit excepturi amet provident veniam ratione minima,
+                tenetur, neque reiciendis deleniti officiis.</p>
+            <a href="{{url_for('pagamento')}}" class="btn btn-primary">Ir para o pagamento</a>
+        </div>
+    </div>
+    <div class="card" style="width: 25rem;">
+        <img src="{{url_for('static', filename='img/aviao.jpg')}}" class="card-img-top" alt="aviao">
+        <div class="card-body">
+            <h5 class="card-title">Pacote 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque repudiandae pariatur
+                laudantium. Quis iure blanditiis architecto aut suscipit excepturi amet provident veniam ratione minima,
+                tenetur, neque reiciendis deleniti officiis.</p>
+            <a href="{{url_for('pagamento')}}" class="btn btn-primary">Ir para o pagamento</a>
+        </div>
+    </div>
+</div> <!-- pagamento -->
+<div id="sobrenos" class="container-fluid p-5 d-flex sobre" style="height: 100vh;">
+    <div class="container sobrenos">
+        <p class="h1">Sobre nós</p>
+        <div class="container d-flex justify-content-center">
+            <p class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci harum iure, illo
+                facere, quasi rem tempora sed distinctio quaerat expedita itaque blanditiis rerum consequuntur id
+                consectetur deserunt officia earum?</p>
+        </div>
+    </div>
+</div> <!-- sobre -->
+<!-- {{url_for('static', filename='img/praia-palmeiras-wallpaper.jpg')}} -->
+{% endblock %}
